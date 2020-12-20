@@ -1,0 +1,158 @@
+<html>
+<head>
+<link rel="stylesheet"type="text/css"href="style.css"/>
+<title>ABOUT ME</title>
+</head>
+<body>
+<embed src="audio/background.mp3"hidden="true"autostart="true"></embed>
+<marquee>ABOUT ME</marquee>
+<br>
+<br>
+<table width="90%" height="9%" 
+bgcolor="#FBEEC1" align="center">
+<tr>
+<td><b>HI, EVERYONE!</b></td>
+<td>
+<a href="index.html"><b>HOME</b></a>
+</td>
+<td>
+<a href="aboutme.html"><b>ABOUT ME</b></a>
+</td>
+<td>
+<a href="family.html"><b>FAMILY</b></a>
+</td>
+<td>
+<a href="gallery.html"><b>GALLERY<b></a>
+</td>
+</tr>
+</table>
+<style>
+<!--
+.styling{
+color:black;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+<left>
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/***************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+***************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='red'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='pink'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+</left>
+<h2 align="center"><font color="maroon">ABOUT FAIRUZ AIDA:</font></h2>
+<table align="center" width="70%" cellpadding="8">
+<tr>
+<td align="center" valign="bottom">My name is Nur Fairuz Aida Binti Mohd Fadzil, I was born on 4 February 2020 
+and grew up in Permatang Pauh, Penang. I am the third child of five other siblings is a boy. 
+Being the only daughter in the family sometimes makes me jealous of other siblings because 
+their age gap is not huge, they were close to each other. However, I am happy to be by their 
+side because they always support my interests and everything I do.
+<br>
+<br>
+My hobby is gardening and I got that interest from my parents because around our house is 
+filled with plants, herbs, flowers and even fruits grown by themselves. I also like to do outdoor 
+activities such as hiking and jungle tracking. Apart from that, I also like to spend time 
+watching movies and listening to songs that do not matter locally or abroad as long as the 
+storyline and lyrics are well presented.
+<br>
+<br>
+In high school, I went to school at <abbr title="Sekolah Menengah Kebangsaan Tun Hussein Onn">SMKTHO</abbr> and I was an active student 
+in the co-curriculum. I represented the school for 5-year in netball at the district level and in 2015, 
+our netball team got first place and qualified to go to state level. That experience was one of those 
+experiences that I will never forget because our team’s effort points paid off. Currently, I am a 
+final semester student for the Diploma in Information Management at UiTM Kedah.
+</td>
+<td>
+<img src="images/fairuz.jpg" align="right">
+</td>
+</tr>
+</table>
+<br>
+<table align="center" cellpadding="7">
+<tr>
+<td align="center" bgcolor="#FBEEC1"><b><font color="maroon">HOBBIES</font></b></td>
+<td align="center" bgcolor="#FBEEC1"><b><font color="maroon">FAVOURITE SONG:</font></b></td>
+</tr>
+<tr>
+<td>
+<embed src="video/hobi.mp4" autostart="false"> </embed>
+<<p align="center"><b><i>My Plants</i></b></p>
+<br>
+<img src="images/hiking.jpg">
+<p align="center"><i><b>Jungle Tracking in Penang National Park</b></i></p>
+<br>
+<img src="images/hiking1.jpg">
+<p align="center"><i><b>Hiking to Monkey Beach</b></i></p>
+</td>
+<td valign="top">
+<ul type="disc">
+<li>
+<a href="audio/Atmyworst.mp3" autoplay="false">At My Worst by Pink Sweat$</a>
+</li>
+<br>
+<li>
+<a href="audio/Malibunight.mp3" autoplay="false">Malibu Night by LANY</a>
+</li>
+<br>
+<li>
+<a href="audio/Kauilhamku.mp3" autoplay="false">Kau Ilhamku by Man Bai</a>
+</li>
+<br>
+<li>
+<a href="audio/Really.mp3" autoplay="false">Really Really by WINNER</a>
+</li>
+<br>
+<li>
+<a href="audio/Rodeostation.mp3" autoplay="false">Rodeo Station by EXO-SC</a>
+</li>
+<br>
+<li>
+<a href="audio/Senyuman.mp3" autoplay="false">Senyuman Ragamu by Gerhana Skacinta</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

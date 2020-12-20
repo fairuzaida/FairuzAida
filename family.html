@@ -1,0 +1,169 @@
+<html>
+<head>
+<link rel="stylesheet"type="text/css"href="style.css"/>
+<title>FAMILY</title>
+</head>
+<body>
+<embed src="audio/background.mp3"hidden="true"autostart="true"></embed>
+<marquee>MY FAMILY</marquee>
+<br>
+<br>
+<table width="90%" height="9%" 
+bgcolor="#FBEEC1" align="center">
+<tr>
+<td><b>HI, EVERYONE!</b></td>
+<td>
+<a href="index.html"><b>HOME</b></a>
+</td>
+<td>
+<a href="aboutme.html"><b>ABOUT ME</b></a>
+</td>
+<td>
+<a href="family.html"><b>FAMILY</b></a>
+</td>
+<td>
+<a href="gallery.html"><b>GALLERY<b></a>
+</td>
+</tr>
+</table>
+<style>
+<!--
+.styling{
+color:black;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+<left>
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/***************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+***************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='red'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='pink'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+</left>
+<h2 align="center"><font color="maroon">MY FAMILY</font></h2>
+<p align="center"><img src="images/family4.jpg"></p>
+<table align="center" width="35%">
+<tr align="center">
+<td>My parents got married on January 1, 1993 and were blessed with 5 children and 
+4 of them are men. I am the only daughter in our family. being the only daughter in 
+the family makes them jealous of other siblings because their small age difference 
+makes them close.
+<br>
+<br>
+“Sibling – The definition that comprises love, stripe, competition and forever friends.” 
+<br>
+<b><i>Byron Pulsifer</i></b>
+<br>
+<br>
+Even though our siblings' attitudes are very different from each other we 
+still need each other.
+</td>
+</tr>
+</table>
+<br>
+<br>
+<table align="center" cellpadding="7">
+<tr bgcolor="#FBEEC1">
+<td><font color="maroon"><i><b>MY PARENTS</b></i></font></td>
+<td colspan="2"><font color="maroon"><i><b>MY SIBLINGS</b></i></font></td>
+</tr>
+<tr>
+<td><img src="images/parent1.png"></td>
+<td colspan="2"><p align="center"><img src="images/sibling2.jpg"></p></td>
+</tr>
+<tr>
+<td>
+Mohd Fadzil Bin Abdul Rahman
+<br>
+23<sup>rd</sup> March 1971
+<br>
+Malayan Sugar Sdn Bhd
+<br>
+<i><b>Strict & fun person</b></i>
+<br>
+<br>
+Siti Rohani Binti Yakop
+<br>
+29<sup>th</sup> December 1970
+<br>
+Housewife
+<br>
+<i><b>Soft & cute person</b></i>
+</td>
+<td>
+Mohd Farid
+<br>
+22<sup>nd</sup> June 1995
+<br>
+Sony Corporation
+<br>
+<i><b>Clumsy & independent person</b></i>
+<br>
+<br>
+Muhd Imran
+<br>
+29<sup>th</sup> October 1996
+<br>
+Ann Joo Steel Berhad
+<br>
+<i><b>Strict & responsible person</b></i>
+</td>
+<td>
+Mohd Faris Iman
+<br>
+11<sup>th</sup> January 2008
+<br>
+<i><b>Soft & playful person</b></i>
+<br>
+<br>
+Mohd Faris Ikhmal
+<br>
+22<sup>nd</sup> August 2010
+<br>
+<i><b>Manja boy</b></i>
+</td>
+</tr>
+</table>
+<br>
+</table>
+</body>
+</html>
